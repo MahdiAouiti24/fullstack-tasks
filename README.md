@@ -65,13 +65,13 @@ Backend will run at:
 - Node.js (v16+ recommended)
 - npm
 ### How to Run
+
 cd frontend
 npm install
 npm start
-Frontend will run at:
-➡️ http://localhost:3000
-Axios handles requests to the backend with:
-baseURL: "http://localhost:8080/api"
+
+Frontend runs at: http://localhost:3000
+Axios handles requests to the backend with baseURL: http://localhost:8080/api
 ---
 ## 6. Application Behavior
 - Loads tasks via GET /api/tasks at startup
@@ -110,6 +110,3 @@ Visit the app at:
 ➡️ http://localhost:3000
 ---
 Thank you for reviewing my work!
-**Mahdi Aouiti**
-Software Engineer
-Tunis, Tunisia
