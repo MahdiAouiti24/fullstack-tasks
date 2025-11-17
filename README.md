@@ -38,9 +38,10 @@ The application runs locally, is fully functional, and requires **no external da
 3. Project Structure
 
 fullstack-tasks/
-├── backend/
-│   └── taskmanager/          # Spring Boot REST API
-└── frontend/                 # React web application
+ ├── backend/
+ │    └── taskmanager/      # Spring Boot REST API
+ └── frontend/              # React web application
+
 
 ---
 
