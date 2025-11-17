@@ -52,7 +52,7 @@ POST	/api/tasks	Create new task
 GET	/api/tasks/{id}	Get task by ID
 PUT	/api/tasks/{id}	Update task
 DELETE	/api/tasks/{id}	Delete task
-5. Frontend (React)
+## 5. Frontend (React)
 Requirements
 Node.js (v16+ recommended)
 
@@ -67,7 +67,7 @@ Frontend runs at: http://localhost:3000
 
 Axios handles requests to the backend with baseURL: http://localhost:8080/api
 
-6. Application Behavior
+## 6. Application Behavior
 Loads tasks via GET /api/tasks at startup
 
 POST /api/tasks creates a new task
@@ -78,7 +78,7 @@ DELETE /api/tasks/{id} removes a task
 
 UI updates instantly after each backend response
 
-7. Key Features
+## 7. Key Features
 No external database needed (uses H2 in-memory)
 
 Simple setup with two commands
@@ -89,7 +89,7 @@ Easily extendable (Docker, PostgreSQL, JWT, CI/CD)
 
 Real-time UI updates
 
-8. Example UI
+## 8. Example UI
 Task Manager
 
 Title: ________
@@ -99,7 +99,7 @@ Description: ________
 
 ▪ Test Task – My first task ✔ [Edit] [Delete]
 
-9. Notes
+## 9. Notes
 H2 database resets on every application restart
 
 CORS enabled for React local development
