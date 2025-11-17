@@ -54,8 +54,8 @@ fullstack-tasks/
 
 ### How to Run
 
-'cd backend/taskmanager'
-'mvn spring-boot:run'
+cd backend/taskmanager
+mvn spring-boot:run
 
 Backend will run at:  
 ➡️ http://localhost:8080
