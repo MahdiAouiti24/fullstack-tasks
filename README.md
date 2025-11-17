@@ -65,11 +65,12 @@ Backend will run at:
 - Node.js (v16+ recommended)
 - npm
 ### How to Run
+```plaintext
 
 cd frontend
 npm install
 npm start
-
+'''
 Frontend runs at: http://localhost:3000
 Axios handles requests to the backend with baseURL: http://localhost:8080/api
 ---
