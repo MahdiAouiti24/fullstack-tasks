@@ -1,5 +1,4 @@
-
-Full-Stack Technical Task – Spring Boot + React
+# Full-Stack Task Manager – Spring Boot + React
 
 **Candidate:** Mahdi Aouiti  
 **Date:** November 2025  
@@ -7,23 +6,23 @@ Full-Stack Technical Task – Spring Boot + React
 
 ---
 
-1. Project Overview
+## 📌 1. Project Overview
 
-This project is a full-stack web application built as part of a technical assessment for a Software Developer role.
+This project is a full-stack web application developed as part of a technical assessment for a Software Developer role.
 
-It provides a **Task Manager** with the following features:
+It provides a **Task Manager** with the ability to:
 
-•	- Create a new task  
-•	- Edit an existing task  
-•	- Toggle task completion  
-•	- View all tasks  
-•	- Delete a task  
+- Create new tasks  
+- Edit existing tasks  
+- Toggle task completion  
+- View all tasks  
+- Delete tasks  
 
-The application runs locally, is fully functional, and requires **no external database**.
+The application runs locally, with **no external database required**, thanks to an embedded H2 in-memory database.
 
 ---
 
-2. Technology Stack
+## 🧰 2. Technology Stack
 
 | Layer       | Technology                          |
 |-------------|-------------------------------------|
@@ -35,120 +34,121 @@ The application runs locally, is fully functional, and requires **no external da
 
 ---
 
-3. Project Structure
+## 📦 3. Project Structure
 
 fullstack-tasks/
- ├── backend/
- │    └── taskmanager/      # Spring Boot REST API
- └── frontend/              # React web application
+├── backend/ # Spring Boot REST API
+│ ├── src/ # Backend source code
+│ ├── pom.xml # Maven build config
+│ └── application.properties
+├── frontend/ # React frontend
+│ ├── src/ # Frontend source code
+│ ├── package.json # Node dependencies
+│ └── public/ # Static assets
+└── README.md # Project documentation
 
 
 ---
 
-4. Backend (Spring Boot)
+## 🚀 4. Backend (Spring Boot)
 
 ### Requirements
-
-•	- Java 17+
-•	- Maven
+- Java 17+
+- Maven
 
 ### How to Run
 
-cd backend/taskmanager
+```bash
+cd backend
 mvn spring-boot:run
 
-Backend will run at:  
+Backend will run at:
 ➡️ http://localhost:8080
 
-### REST API Endpoints
+REST API Endpoints
+| Method | Endpoint          | Description        |
+| ------ | ----------------- | ------------------ |
+| GET    | `/api/tasks`      | Retrieve all tasks |
+| POST   | `/api/tasks`      | Create a new task  |
+| GET    | `/api/tasks/{id}` | Retrieve by ID     |
+| PUT    | `/api/tasks/{id}` | Update task        |
+| DELETE | `/api/tasks/{id}` | Delete task        |
 
-| Method | Endpoint          | Description      |
-|--------|-------------------|------------------|
-| GET    | `/api/tasks`      | Get all tasks    |
-| POST   | `/api/tasks`      | Create new task  |
-| GET    | `/api/tasks/{id}` | Get task by ID   |
-| PUT    | `/api/tasks/{id}` | Update task      |
-| DELETE | `/api/tasks/{id}` | Delete task      |
+💻 5. Frontend (React)
+Requirements
 
----
+Node.js (v16+ recommended)
 
-5. Frontend (React)
-
-### Requirements
-
-•	- Node.js (v16+ recommended)
-•	- npm
+npm
 
 ### How to Run
 
+```bash
 cd frontend
 npm install
 npm start
 
-Frontend will run at:  
+Frontend will run at:
 ➡️ http://localhost:3000
 
-Axios handles requests to the backend with:
+The React app communicates with the backend using Axios, with:
+baseURL: "http://localhost:8080/api"
 
 
----
+🔄 6. Application Behavior
+UI fetches all tasks via GET /api/tasks on load
 
-6. Application Behavior
+Creating, editing, toggling, and deleting tasks all trigger REST requests to the backend
 
-•	- Loads tasks via `GET /api/tasks` at startup  
-•	- `POST /api/tasks` creates a new task  
-•	- `PUT /api/tasks/{id}` edits or updates completion  
-•	- `DELETE /api/tasks/{id}` removes a task  
-•	- UI updates instantly after each response  
+UI state updates immediately after successful backend responses
 
----
+🧩 7. Key Features
 
-7. Key Features
+🔌 No external DB needed (auto-reset H2 in-memory)
 
-•	- No external DB needed (in-memory H2)  
-•	- Simple setup with two commands  
-•	- Clean code separation between frontend & backend  
-•	- Extendable (Docker, PostgreSQL, JWT, CI/CD)  
+🧹 Simple setup — two commands to start everything
 
----
+🧱 Fully decoupled frontend & backend
 
-8. Example UI
+🚀 Easily extendable (Docker, PostgreSQL, JWT, CI/CD, etc.)
 
+🖼️ 8. Example UI
 Task Manager
 
-Title: ________   Description: ________   [ ] Completed   [Create]
+Title: ________   Description: ________    [ ] Completed   [Create]
 
-▪ Test Task – My first task  ✔ [Edit] [Delete]
+• Test Task – My first task    ✔  [Edit] [Delete]
 
----
+📝 Notes
 
-9. Notes
+The database is in-memory and resets on each restart
 
-•	- H2 resets on every restart  
-•	- CORS enabled for React local dev  
-•	- Clean and maintainable code  
+CORS is enabled for React development
 
----
+Code is intentionally clean and structured for easy review and extension
+
 
 📬 Submission Instructions
 
-1. Start backend:
+Run the backend:
 
-cd backend/taskmanager
+```bash
+cd backend
 mvn spring-boot:run
 
-2. Start frontend:
 
+Run the frontend:
+
+```bash
 cd frontend
 npm start
 
-Visit the app at:  
+Open the UI at:
 ➡️ http://localhost:3000
 
----
 
-Thank you for reviewing my work!  
-**Mahdi Aouiti**  
-Software Engineer  
+Thank you for reviewing this project!
+
+Mahdi Aouiti
+Software Engineer
 Tunis, Tunisia
-
