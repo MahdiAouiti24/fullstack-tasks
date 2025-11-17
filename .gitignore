@@ -1,0 +1,16 @@
+# Backend
+backend/taskmanager/target/
+backend/taskmanager/.mvn/
+backend/taskmanager/.classpath
+backend/taskmanager/.project
+backend/taskmanager/.settings/
+
+# Frontend
+frontend/node_modules/
+frontend/build/
+
+# OS / IDE
+.DS_Store
+.idea/
+.vscode/
+*.log
