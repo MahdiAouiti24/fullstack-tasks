@@ -108,8 +108,4 @@ cd frontend
 npm start
 Visit the app at:
 ➡️ http://localhost:3000
----
-Thank you for reviewing my work!
-**Mahdi Aouiti**
-Software Engineer
-Tunis, Tunisia
+
