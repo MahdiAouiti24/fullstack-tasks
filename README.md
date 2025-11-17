@@ -31,10 +31,7 @@ The application runs locally, is fully functional, and requires no external data
 fullstack-tasks/
 ├── backend/
 │ └── taskmanager/ # Spring Boot REST API
-└── frontend/ # React web application
-
-text
-
+└── frontend/ 
 ## 4. Backend (Spring Boot)
 
 ### Requirements
@@ -44,7 +41,8 @@ text
 ### How to Run
 ```bash
 cd backend/taskmanager
-mvn spring-boot:run
+mvn spring-boot:run# React web application
+
 Backend runs at: http://localhost:8080
 
 REST API Endpoints
@@ -59,12 +57,12 @@ Requirements
 Node.js (v16+ recommended)
 
 npm
-
 How to Run
-bash
+
 cd frontend
 npm install
 npm start
+
 Frontend runs at: http://localhost:3000
 
 Axios handles requests to the backend with baseURL: http://localhost:8080/api
@@ -112,16 +110,14 @@ Backend must be running before starting frontend
 
 🚀 Submission Instructions
 Start Backend:
-
-bash
 cd backend/taskmanager
 mvn spring-boot:run
-Start Frontend:
 
-bash
+Start Frontend:
 cd frontend
 npm install
 npm start
+
 Open application at: http://localhost:3000
 
 Thank you for reviewing my work.
@@ -129,3 +125,7 @@ Thank you for reviewing my work.
 Mahdi Aouiti
 Software Engineer
 Tunis, Tunisia
+
+
+
+
