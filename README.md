@@ -69,8 +69,8 @@ Backend will run at:
 
 cd frontend
 npm install
-npm start
-'''
+npm start '''
+
 Frontend runs at: http://localhost:3000
 Axios handles requests to the backend with baseURL: http://localhost:8080/api
 ---
